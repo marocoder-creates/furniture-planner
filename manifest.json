@@ -1,6 +1,6 @@
 {
-    "name": "flutter_application_planner",
-    "short_name": "flutter_application_planner",
+    "name": "flutter_application_gameplanner",
+    "short_name": "flutter_application_gameplanner",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
