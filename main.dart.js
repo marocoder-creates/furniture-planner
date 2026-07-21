@@ -26214,9 +26214,11 @@ _.d=b
 _.e=c
 _.f=d
 _.a=e},
-a2M:function a2M(a,b){this.b=a
-this.c=b
-this.d=1},
+a2M:function a2M(a,b,c){var _=this
+_.a=a
+_.b=b
+_.c=c
+_.d=1},
 HK:function HK(a,b){var _=this
 _.d=null
 _.e=a
@@ -92804,7 +92806,7 @@ m=k/b1
 l/=b1
 k=b0.b
 h=b0.c
-b2=A.aEx(A.k(["color",15591905,"transparent",!0,"opacity",1,"depthWrite",!1],j,i))
+b2=A.aEx(A.k(["color",15591905,"transparent",!0,"opacity",1],j,i))
 b3=A.l4(A.a6q(b1,b0.d,p),b2)
 g=b3.id
 g=g.a
@@ -92818,7 +92820,7 @@ g.f.$0()
 g=q.d.ax
 g===$&&A.a()
 g.j5(b3)
-f.push(new A.a2M(b2,new A.e(l*a8,-m*a8)))}for(c3=q.a.d,p=c3.length,a5=0;a5<c3.length;c3.length===p||(0,A.x)(c3),++a5){b4=c3[a5]
+f.push(new A.a2M(b3,b2,new A.e(l*a8,-m*a8)))}for(c3=q.a.d,p=c3.length,a5=0;a5<c3.length;c3.length===p||(0,A.x)(c3),++a5){b4=c3[a5]
 b5=q.ale(b4.b)
 if(b5==null)continue
 b6=b5.e
@@ -92883,9 +92885,13 @@ for(a=b.e,q=a.length,e=0;e<q;++e){d=a[e]
 p=d.c
 c=p.a*h+p.b*i<=0.000001?1:0
 p=d.d
-p+=(c-p)*f
-d.d=p
-d.b.CW=p}},
+p=d.d=p+(c-p)*f
+o=d.a
+n=d.b
+if(Math.abs(p-c)<0.01){d.d=c
+o.cx=c>0.5
+n.CW=1}else{o.cx=!0
+n.CW=p}}},
 alg(a){this.at=this.r},
 ali(a){var s,r,q,p,o,n,m,l,k,j,i=this
 if(a.w>=2)i.r=B.c.dL(i.at/a.d,i.w,i.x)
